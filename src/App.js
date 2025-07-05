@@ -3,16 +3,21 @@ import Homepage from './pages/Homepage';
 import Loginpage from './pages/LoginPage';
 import ProductDetails from './pages/ProductDetails';
 import './App.css';
+import { CartProvider } from './context/CartContext';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Loginpage />}/>
-        <Route path='/home' element={<Homepage />}/>
-        <Route path='/home/:productId' element={<ProductDetails />}/>
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Loginpage />}/>
+          <Route path='/home' element={<Homepage />}/>
+          <Route path='/home/:productId' element={<ProductDetails />}/>
+          <Route path='/cart' element={<CartPage />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 
