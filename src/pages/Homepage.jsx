@@ -39,10 +39,12 @@ const Homepage = () => {
                             <div className='product-info'>
                                 <h3>{product.name}</h3>
                                 <p className='product-price'>{product.price}</p>
-                                <button
-                                    className='add-to-cart-card-btn'
-                                    onClick={(e) => handleAddToCart(e, product)}>
-                                    Add To Cart
+                                <button className='add-to-cart-card-btn'
+                                onClick={(e) => {
+                                    handleAddToCart(e, product);
+                                    alert(`${product.name} has been added to your cart!`);
+                                    }}>
+                                        Add To Cart
                                 </button>
                             </div>
                         </div>))}
