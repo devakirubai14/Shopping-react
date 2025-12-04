@@ -145,3 +145,36 @@
     background-color: var(--primary-color);
     color: white;
 }
+
+/* ----- MOBILE FIXES ----- */
+@media (max-width: 600px) {
+
+  .home-page {
+      padding: 1rem;
+  }
+
+  .home-header h1 {
+      font-size: 1.8rem;
+  }
+
+  .product-grid {
+      grid-template-columns: 1fr; /* Single column on mobile */
+      gap: 1.5rem;
+  }
+
+  .product-image-container {
+      height: 180px;
+  }
+
+  .header-actions {
+      position: static;
+      justify-content: center;
+      margin-top: 1rem;
+  }
+
+  .cart-button,
+  .logout-button {
+      width: 100%;
+      text-align: center;
+  }
+}

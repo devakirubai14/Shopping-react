@@ -116,3 +116,33 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
+
+  /* ----- MOBILE FIXES ----- */
+@media (max-width: 600px) {
+
+  .product-details-page {
+      padding: 1rem;
+  }
+
+  .details-header {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .product-details-container {
+      padding: 1.5rem;
+  }
+
+  .product-details-info h1 {
+      font-size: 1.8rem;
+  }
+
+  .product-price-details {
+      font-size: 1.5rem;
+  }
+
+  .add-to-cart-button {
+      padding: 0.8rem;
+      font-size: 1rem;
+  }
+}

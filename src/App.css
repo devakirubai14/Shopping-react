@@ -39,3 +39,19 @@ body {
       text-align: center;
   }
 }
+
+/* ----- GLOBAL MOBILE FIXES ----- */
+@media (max-width: 600px) {
+
+  body {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 0.9rem;
+  }
+
+  img {
+      max-width: 100%;
+  }
+}
