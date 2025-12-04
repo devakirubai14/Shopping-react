@@ -39,7 +39,7 @@ const LoginPage = () => {
         <div className="login-page-container">
             <form onSubmit={handleSubmit} className="login-container" noValidate>
                 <h2>Welcome Back!</h2>
-                <p className="login-subtitle">Please enter your details to sign in.</p>
+                <p className="login-subtitle">Please enter your details to sign in. (Any username and password just to login)</p>
                 <div className="form-group">
                     <label htmlFor="username">Username</label>
                     <input 
